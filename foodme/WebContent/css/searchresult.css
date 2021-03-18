@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+#searchresultwrapper {
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	    padding-bottom: 30px;
+}
+
+#searchresultcontainer {
+	display: inline-block;
+	margin: 0;
+	height: 100%;
+	padding: 10px 20px;
+	vertical-align: top;
+}
+
+#searchcategolymenu {
+	display: inline-block;
+	margin: 0;
+	height: 100%;
+	text-align: center;
+	padding-top: 22px;
+	vertical-align: top;
+	position: relative;
+}
+
+#searchcategolytable {
+	all: initial;
+	margin: 0;
+}
+
+#searchcategolytable tr {
+	margin: 0;
+	display: block;
+}
+
+#searchcategolytable th {
+	margin: 0;
+	display: block;
+	padding: 5px 0px;
+	border-bottom: solid 1px  #b5b5b5;
+}
+
+#resulttable {
+	margin: 0;
+	padding: 10px 0;
+}
+
+#resulttable th {
+	border-bottom: solid 1px #b5b5b5;
+	padding: 5px 10px;
+}
+

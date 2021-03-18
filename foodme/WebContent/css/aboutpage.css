@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.contentheader{
+	border:solid 1px;
+	margin-top:20px;
+	padding:20px;
+	text-align:center;
+	background:#2490D0;
+	color:#ffffff;
+}

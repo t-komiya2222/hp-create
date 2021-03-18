@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*--------------------------------
+body設定
+--------------------------------*/
+body {
+	margin: 0;
+	height: 100%;
+}
+
+/*----------------------------
+ラッパー
+----------------------------*/
+#wrapper{
+	width: 100%;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+p, th {
+	font-weight: normal;
+	font-style: normal;
+}
+
+h6{
+	font-size:320px;
+	margin:0;
+}
+
+/*----------------------------
+ヘッダーメニュー
+----------------------------*/
+header {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background: black;
+}
+
+.site-name {
+	font-size: 3em;
+	margin: 0 auto;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+.nav {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.nav__wrapper {
+	padding: 10px;
+	margin: 0;
+}
+
+.nav__item {
+	list-style: none;
+	display: inline-block;
+	margin: 0px;
+	padding: 5px 30px;
+	border: 1px solid #ffffff;
+}
