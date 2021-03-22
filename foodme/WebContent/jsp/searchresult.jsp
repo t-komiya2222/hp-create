@@ -2,13 +2,12 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="foodme.UserBean"%>
-<%@ page import="foodme.Getcategolychange" %>
+<%@ page import="foodme.Getcategolychange"%>
 <%
 	ArrayList<UserBean> beanList = (ArrayList<UserBean>) request.getAttribute("beanList");
 %>
 <%
 	request.setCharacterEncoding("UTF-8");
-//int getcalorie = ((Integer) (request.getAttribute("getcalorie"))).intValue();
 String getappetizer = (String) request.getAttribute("getappetizer");
 String getsidedish = (String) request.getAttribute("getsidedish");
 String getmaindish = (String) request.getAttribute("getmaindish");
@@ -68,11 +67,13 @@ String getdessert = (String) request.getAttribute("getdessert");
 							%>
 							<div id="searchfoodcontent">
 								<div id="searchfoodimage">
-									<img src="<%=Getcategolychange.getfoodimage(bean.getFood_name())%>">
+									<img
+										src="<%=Getcategolychange.getfoodimage(bean.getFood_name())%>">
 								</div>
 								<div id="searchfoodname"><%=bean.getFood_name()%></div>
 								<div id="searchfoodcategoly"><%=bean.getFood_categoly()%></div>
-								<div id="searchfoodkcal"><%=bean.getFood_calorie()%>kcal</div>
+								<div id="searchfoodkcal"><%=bean.getFood_calorie()%>kcal
+								</div>
 							</div>
 							<%
 								} // endfor

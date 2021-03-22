@@ -8,6 +8,9 @@
 </head>
 <link rel="stylesheet" href="./../css/style.css">
 <body>
+
+<% request.setCharacterEncoding("UTF-8"); %>
+
 	<header class="site-header">
 		<h1 class="site-name">
 			<a>Foodme</a>
@@ -36,7 +39,11 @@
 							いただいてもご回答できませんのでご了承ください。
 						</p>
 
-						<form action="" method="post">
+						<form action="/foodme/Contact" method="post">
+						<input type ="hidden" name="_to" value="sin28502850@gmail.com">
+						<input type ="hidden" name="_subject" value="test">
+						<input type ="hidden" name="_from" value="foodme.contact">
+
 							<table class="contacttable">
 								<tbody>
 									<tr>
@@ -69,7 +76,6 @@
 							</div>
 						</form>
 					</div>
-
 			</div>
 		</div>
 	</div>
