@@ -40,7 +40,7 @@
 						</p>
 
 						<form action="/foodme/Contact" method="post">
-						<input type ="hidden" name="_to" value="sin28502850@gmail.com">
+						<input type ="hidden" name="_to" value="">
 						<input type ="hidden" name="_subject" value="test">
 						<input type ="hidden" name="_from" value="foodme.contact">
 
