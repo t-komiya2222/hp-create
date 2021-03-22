@@ -8,14 +8,6 @@
 	    padding-bottom: 30px;
 }
 
-#searchresultcontainer {
-	display: inline-block;
-	margin: 0;
-	height: 100%;
-	padding: 10px 20px;
-	vertical-align: top;
-}
-
 #searchcategolymenu {
 	display: inline-block;
 	margin: 0;
@@ -43,13 +35,26 @@
 	border-bottom: solid 1px  #b5b5b5;
 }
 
-#resulttable {
-	margin: 0;
-	padding: 10px 0;
+#searchfoodwrapper{
+	margin-top:10px;
+	display:inline-block;
+	width:80%;
+	height:100%;
 }
 
-#resulttable th {
-	border-bottom: solid 1px #b5b5b5;
-	padding: 5px 10px;
+#searchfoodcontent{
+	margin-top:5px;
+	margin-left:5px;
+	display:inline-block;
+	font-size:13px;
+	border:solid 1px #b5b5b5 ;
 }
 
+#searchfoodimage img{
+	width:175px;
+	height:150px;
+}
+
+#searchfoodname{
+	font-size:13px;
+}

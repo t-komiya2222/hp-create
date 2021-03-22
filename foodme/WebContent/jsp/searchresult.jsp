@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="foodme.UserBean"%>
+<%@ page import="foodme.Getcategolychange" %>
 <%
 	ArrayList<UserBean> beanList = (ArrayList<UserBean>) request.getAttribute("beanList");
 %>
@@ -60,29 +61,22 @@ String getdessert = (String) request.getAttribute("getdessert");
 								</tbody>
 							</table>
 						</div>
-						<div id="searchresultcontainer">
-							<table id="resulttable">
-								<tbody>
-									<tr>
-										<th>料理名</th>
-										<th>カテゴリー</th>
-										<th>カロリー</th>
-										<th>発祥国</th>
-									</tr>
-									<%
-										for (UserBean bean : beanList) {
-									%>
-									<tr>
-										<td><%=bean.getFood_name()%></td>
-										<td><%=bean.getFood_categoly()%></td>
-										<td><%=bean.getFood_calorie()%></td>
-										<td><%=bean.getFood_country()%></td>
-									</tr>
-									<%
-										} // endfor
-									%>
-								</tbody>
-							</table>
+
+						<div id="searchfoodwrapper">
+							<%
+								for (UserBean bean : beanList) {
+							%>
+							<div id="searchfoodcontent">
+								<div id="searchfoodimage">
+									<img src="<%=Getcategolychange.getfoodimage(bean.getFood_name())%>">
+								</div>
+								<div id="searchfoodname"><%=bean.getFood_name()%></div>
+								<div id="searchfoodcategoly"><%=bean.getFood_categoly()%></div>
+								<div id="searchfoodkcal"><%=bean.getFood_calorie()%>kcal</div>
+							</div>
+							<%
+								} // endfor
+							%>
 						</div>
 					</div>
 				</div>

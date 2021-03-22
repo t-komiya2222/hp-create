@@ -27,4 +27,24 @@ public class Getcategolychange {
 
 		return hashcategoly;
 	}
+
+	//getfoodnameで対応する画像を持ってくる
+	public static String getfoodimage(String getcategolyname) {
+
+		HashMap<String, String> map = new HashMap<String, String>();
+
+		map.put("塩むすび", "./image/onigiri.jpg");
+		map.put("ホットアップルパイ", "./image/applepie.jpg");
+		map.put("ボルシチ", "./image/borusiti.jpg");
+		map.put("ハンバーガー", "./image/burger.jpg");
+		map.put("チキングリルとクスクス", "./image/couscous.jpg");
+		map.put("魚介のサルピコン", "./image/gyokainosarupikon.jpg");
+		map.put("シーフードパエリア", "./image/paeria.jpg");
+		map.put("パスティ", "./image/pasuthi.jpg");
+		map.put("サーモンのエスカベッシュ", "./image/samon_esukabesh.jpg");
+
+		getcategolyname = map.get(getcategolyname);
+
+		return getcategolyname;
+	}
 }
